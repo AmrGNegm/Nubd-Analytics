@@ -2,42 +2,164 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Nubd | نبض</title>
+  <title>Nubd Analytics | نبض</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: Arial, sans-serif;
+      background: #0f172a;
       color: white;
-      text-align: center;
-      padding: 80px 20px;
     }
-    h1 {
-      font-size: 56px;
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    header h1 {
+      font-size: 48px;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 20px;
+
+    header p {
       color: #cbd5f5;
+      font-size: 18px;
     }
-    .btn {
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+    }
+
+    .labs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+
+    .card a {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background: #38bdf8;
-      color: black;
+      margin-top: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      color: #38bdf8;
       font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #334155;
+      color: #94a3b8;
+      font-size: 14px;
     }
   </style>
 </head>
-<body>
-  <h1>Nubd | نبض</h1>
-  <p>نبض الداتا في العالم العربي</p>
-  <p>تعلم • طبّق • أثّر</p>
 
-  <a class="btn" href="https://github.com/AmrGNegm">تابعني على GitHub</a>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Nubd Analytics | نبض</h1>
+    <p>نبض الداتا في العالم العربي</p>
+    <p>Learn • Build • Apply • Share</p>
+  </header>
+
+  <!-- ABOUT -->
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <p>
+      Nubd Analytics is a learning-first data platform focused on Data Engineering,
+      Data Analytics, and AI. The mission is simple: share knowledge as practical labs
+      and real-world applications.
+    </p>
+  </div>
+
+  <!-- LABS -->
+  <div class="container">
+    <h2 class="section-title">📚 Labs</h2>
+
+    <div class="labs">
+
+      <!-- LAB CARD TEMPLATE (انسخه وعدل عليه يوميًا) -->
+      <!--
+      <div class="card">
+        <h3>Lab Title</h3>
+        <p>Short description of the lab and key concepts.</p>
+        <a href="labs/section_01_example.html">Start Lab →</a>
+      </div>
+      -->
+
+      <!-- أول لاب (Placeholder) -->
+      <div class="card">
+        <h3>Coming Soon</h3>
+        <p>Daily hands-on labs in Data Engineering & Analytics.</p>
+        <a href="#">Stay Tuned</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DAILY SYSTEM -->
+  <div class="container">
+    <h2 class="section-title">⚙️ Daily Learning System</h2>
+    <p>
+      Every day, a new lab is created following a structured workflow:
+    </p>
+
+    <ul>
+      <li>Pick a topic from roadmap.sh</li>
+      <li>Build interactive lab + instructor cheat sheet</li>
+      <li>Open GitHub PR</li>
+      <li>Create LinkedIn posts</li>
+      <li>Document in Notion</li>
+    </ul>
+  </div>
+
+  <!-- LINKS -->
+  <div class="container">
+    <h2 class="section-title">🔗 Links</h2>
+    <p>
+      <a href="https://github.com/AmrGNegm/Nubd-Analytics" target="_blank">
+        GitHub Repository
+      </a>
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Built by Nubd Analytics — Sharing Data Knowledge as Zakat of Knowledge
+  </footer>
 
 </body>
 </html>
